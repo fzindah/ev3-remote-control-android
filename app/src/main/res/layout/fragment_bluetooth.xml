@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ev3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/vvTvOut1"
+        android:layout_width="0dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vvTvOut2"
+        android:layout_width="0dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="#80000000"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vvTvOut1" />
+
+    <Button
+        android:id="@+id/vvButtonLocatePaired"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Paired Devices"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vvTvOut2" />
+
+    <Button
+        android:id="@+id/vvButtonRequestPermissions"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Request Permission"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/vvButtonLocatePaired"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vvTvOut2" />
+
+    <Button
+        android:id="@+id/vvButtonDisconnect"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Disconnect"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vvTvOut2" />
+
+    <ListView
+        android:id="@+id/bluetoothList"
+        android:layout_width="408dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="30dp"
+        android:background="#80000000"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/vvTvOut2"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

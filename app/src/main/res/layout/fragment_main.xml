@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ev3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="#C8011119"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/vv_buttonUp"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/custom_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/vv_buttonDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv_tvOut2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/u" />
+
+    <SeekBar
+        android:id="@+id/vv_arm_power_seekbar"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/firstMotorTextView"
+        app:layout_constraintTop_toTopOf="@+id/vv_buttonDown"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <ImageButton
+        android:id="@+id/vv_buttonRight"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="388dp"
+        android:background="@drawable/custom_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vv_buttonDown"
+        app:srcCompat="@drawable/r" />
+
+    <ImageButton
+        android:id="@+id/vv_buttonArmDown"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/custom_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vv_buttonArmUp"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv_buttonLeft"
+        app:layout_constraintVertical_bias="0.567"
+        app:srcCompat="@drawable/arm_down" />
+
+    <ImageButton
+        android:id="@+id/vv_buttonLeft"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="388dp"
+        android:background="@drawable/custom_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vv_buttonDown"
+        app:srcCompat="@drawable/l" />
+
+    <TextView
+        android:id="@+id/secondMotorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="268dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv_buttonLeft"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/vv_buttonDown"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/custom_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/vv_buttonUp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/vv_buttonUp"
+        app:layout_constraintTop_toTopOf="@+id/vv_buttonLeft"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/d" />
+
+    <TextView
+        android:id="@+id/firstMotorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="49dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/vv_buttonArmDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv_buttonLeft"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/vv_drive_power_seekbar"
+        android:layout_width="261dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toEndOf="@+id/firstMotorTextView"
+        app:layout_constraintTop_toTopOf="@+id/vv_buttonDown"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/vv_buttonArmUp"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:background="@drawable/custom_ripple"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vv_buttonRight"
+        app:layout_constraintVertical_bias="0.408"
+        app:srcCompat="@drawable/arm_up" />
+
+<!--    <Button-->
+<!--        android:id="@+id/soundButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:text="Music Controls"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/vv_arm_power_seekbar"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
